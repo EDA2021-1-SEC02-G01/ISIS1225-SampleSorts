@@ -85,21 +85,12 @@ def printResults(ord_books, sample=10):
     size = lt.size(ord_books)
     if size > sample:
         print("Los primeros ", sample, " libros ordenados son:")
-<<<<<<< HEAD
         i = 1
         while i <= sample:
             book = lt.getElement(ord_books, i)
             print('Titulo: ' + book['title'] + ' ISBN: ' +
                   book['isbn'] + ' Rating: ' + book['average_rating'])
             i += 1
-=======
-        i=1
-        while i <= sample:
-            book = lt.getElement(ord_books,i)
-            print('Titulo: ' + book['title'] + ' ISBN: ' +
-            book['isbn'] + ' Rating: ' + book['average_rating'])
-            i+=1
->>>>>>> e26783d658bd9ddb628b948854b4781c2fc706f5
 
 
 catalog = None
@@ -140,15 +131,10 @@ while True:
         size = input("Indique tamaño de la muestra: ")
         result = controller.sortBooks(catalog, int(size))
         print("Para la muestra de", size, " elementos, el tiempo (mseg) es: ",
-<<<<<<< HEAD
                                           str(result[0]))
         printResults(result[1])
 
-=======
-                                        str(result[0]))
-        printResults(result[1])
-    
->>>>>>> e26783d658bd9ddb628b948854b4781c2fc706f5
     else:
         sys.exit(0)
 sys.exit(0)
+
